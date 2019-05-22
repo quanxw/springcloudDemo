@@ -22,7 +22,7 @@ spring:
       max-wait-millis: 200                                  # 等待连接获取的最大超时时间
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
-  type-aliases-package: com.atguigu.springcloud.entities    # 所有Entity别名类所在包
+  type-aliases-package: com.demo.springcloud.entities    # 所有Entity别名类所在包
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
 eureka:
@@ -35,8 +35,8 @@ eureka:
     prefer-ip-address: true     #访问路径可以显示IP地址     
  
 info: 
-  app.name: atguigu-microservicecloud
-  company.name: www.atguigu.com
+  app.name: demo-microservicecloud
+  company.name: www.demo.com
   build.artifactId: $project.artifactId$
   build.version: $project.version$
 
